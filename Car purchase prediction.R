@@ -75,7 +75,6 @@ confusion_mtx
 Accuracy(y_pred, test[, 2])
 
 
-
 #Logistic regression classification
 set.seed(12)
 logistic_model = glm(as.factor(Purchased) ~ Gender + Age_Norm + Monthly_Salary_Norm,
@@ -102,13 +101,8 @@ barplot(height = agg_df$x, main = "'Purchased' Distribution", xlab = "Purchased"
 
 
 
-
-
-
-
 agg_df <- aggregate(all_data$Gender, by=list(all_data$Gender), FUN = length)
 agg_df
 
 barplot(height = agg_df$x, main = "'Gender' Distribution", xlab = "Gender",
         ylab = "Count", names.arg = agg_df$Group.1, col="blue")
-
