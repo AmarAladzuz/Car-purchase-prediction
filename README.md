@@ -1,1 +1,1 @@
-# Car-purchase-prediction
+# Car purchase prediction
